@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+      
+/* Progress bar animation */
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Success checkmark animation */
+@keyframes scale {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.font-outfit { font-family: 'Outfit', sans-serif; }
+.bg-gradient { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); }
+.card-shadow { box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2); }
+.progress-animation { animation: progress 1s ease-out forwards; }
+.success-animation { animation: scale 0.5s ease-out forwards; }
+
+/* Floating effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.float { animation: float 6s ease-in-out infinite; }
+
+/* Fix for button gradient */
+#generateBtn {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
